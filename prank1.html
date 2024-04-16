@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="prank1.css">
+    <title>Its a prank!</title>
+</head>
+<body>
+    <div class="back">
+       <a href="index.html">clic</a>
+    </div>
+<div class="container">
+    <div class="texts">
+        <p class="heytext">Dahil naandito ka Swerte ka!</p>
+        <p class="ggs" id="clickMe">Scatter mo na!</p>
+        <p class="gg"></p>
+    </div>
+</div>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const clickMe = document.getElementById("clickMe");
+        const joke = document.querySelector(".gg");
+
+        clickMe.addEventListener("click", function() {
+            // Toggle the opacity of the "JOKE!" paragraph
+            if (joke.style.opacity === "1") {
+                joke.style.opacity = "0";  // Hide the "JOKE!" paragraph
+            } else {
+                joke.style.opacity = "1";  // Show the "JOKE!" paragraph
+            }
+        });
+    });
+</script>
+
+
+</body>
+</html>
